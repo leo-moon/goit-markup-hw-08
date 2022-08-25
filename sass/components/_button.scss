@@ -1,0 +1,28 @@
+.button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    text-align: center;
+    background: var(--accent-color);
+    border: 0px;
+    box-shadow: var(--button-box-shadow);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.06em;
+    color: var(--main-color-dark-theme);
+
+    transition: var(--transition-dur-fun);
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--hero-btn-hover-color);
+        border-color: var(--main-color-dark-theme);
+    }
+}

@@ -1,0 +1,49 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+
+    background: var(--modal-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition: transform var(--transition-dur-fun),
+        opacity var(--transition-dur-fun);
+
+    .backdrop.is-hidden & {
+            opacity: 0;
+        }
+}
+
+.mdl-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    margin: 0;
+    background-color: var(--main-color-dark-theme);
+}
+
+.cls-mdl-button-svg {
+    height: 30px;
+    width: 30px;
+    fill: var(--dest-hover-border-color);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill var(--transition-dur-fun);
+
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}

@@ -1,0 +1,37 @@
+// .clients__icons {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .clients__icon-list {
+//     width: calc((100% - 5*30px)/6);
+//     height: 92px;
+// }
+
+// .clients__link {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: var(--main-color-dark-theme);
+//     border: 1px solid var(--clients-card-main-color);
+//     border-radius: 4px;
+//     fill: var(--clients-card-main-color);
+//     transition-property: fill;
+//     transition: fill var(--transition-dur-fun),
+//         border var(--transition-dur-fun);
+
+//     &:focus,
+//     &:hover {
+//         outline: none;
+//         border: 1px solid var(--accent-color);
+//         fill: var(--accent-color);
+//     }
+// }
+
+// .clients__list {
+//     width: 106px;
+//     height: 60px;
+//     border: none;
+// }

@@ -1,0 +1,45 @@
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    padding-left: 0;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html,
+body,
+header,
+footer,
+.port-main {
+    font-family: 'Roboto';
+    font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+link {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+}
+
+ul,
+nl {
+    list-style-type: NONE;
+    font-size: 0;
+    padding: 0;
+}

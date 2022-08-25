@@ -1,0 +1,167 @@
+.port-portfolio {
+    color: var(--accent-color);
+}
+.port-main {
+    padding-top: 94px;
+}
+
+.port-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.port-filters {
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    .port-button {
+        padding: 6px 22px;
+        background-color: var(--portfolio-button-background-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        letter-spacing: 0.03em;
+        margin-right: 8px;
+        border-radius: 4px;
+        border: var(--portfolio-button-background-color);
+
+        color: var(--main-color-light-theme);
+        transition-property: filter;
+        transition: filter var(--transition-dur-fun),
+            background-color var(--transition-dur-fun),
+            color var(--transition-dur-fun);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+            color: var(--main-color-dark-theme);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            outline: none;
+        }
+    }
+}
+ 
+.port-button {
+    padding: 6px 22px;
+    background-color: var(--portfolio-button-background-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    margin-right: 8px;
+    border-radius: 4px;
+    border: var(--portfolio-button-background-color);
+    
+    color: var(--main-color-light-theme);
+    transition-property: filter;
+    transition: filter var(--transition-dur-fun),
+        background-color var(--transition-dur-fun),
+        color var(--transition-dur-fun);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--main-color-dark-theme);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        outline: none;
+    }
+}
+
+.port-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .port-project {
+    position: relative;
+    width:calc((100% - 2*30px)/3);
+    background: #FFFFFF;
+    overflow: hidden;
+    transition-property: filter;
+    transition: filter var(--transition-dur-fun);
+
+    &:hover {
+        filter: var(--portfolio-drop-shadow);
+    }
+}
+}
+
+.port-overlay-overflow {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 294px;
+    overflow: hidden;
+
+    .port-overlay {
+            display: inline-block;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 63px 24px;
+            background-color: var(--accent-color);
+            opacity: 0.9;
+            outline: var(--accent-color);
+            transform: translateY(101%);
+            transition-property: transform;
+            transition: transform var(--transition-dur-fun);
+
+            .port-project:hover & {
+                    transform: translateY(0%);
+                }
+    
+            .port-overlay-text {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.56;
+                letter-spacing: 0.03em;
+    
+                color: var(--main-color-dark-theme);
+            }
+        }
+}
+
+.port-title-link {
+    padding: 20px 24px 20px 24px;
+    border: 1px solid #EEEEEE;
+
+    .port-title {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+    
+            color: var(--main-color-light-theme);
+        }
+    
+        .port-link {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.03em;
+    
+            color: var(--portfolio-link-color);
+        }
+}
+
+.port-nav-link-list::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% + 40px - 4px);
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
