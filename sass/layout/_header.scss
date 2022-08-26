@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 250px) {
     .navigation__main {
         display: none;
     }
@@ -27,6 +27,14 @@
             fill: var(--accent-color);
         }
     }
+
+.mobile-menu-btn__icon {
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+
+}
 
     .logo {
         font-family: 'Raleway', sans-serif;
@@ -61,6 +69,14 @@
         display: none;
     }
 
+    .mobile-menu {
+        display: none;
+    }
+
+    .is-close {
+        display: none;
+    }
+
     .header__box {
         padding-top: 21px;
         padding-bottom: 21px;
@@ -92,8 +108,7 @@
         letter-spacing: 0.02em;
         text-decoration: none;
         color: var(--main-color-light-theme);
-        transition-property: color;
-        transition: color var();
+        transition: color var(--transition-dur-fun);
 
         &:hover,
         &:focus {
@@ -201,6 +216,8 @@
     .header__box {
         padding-top: 24px;
         padding-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .header-contacts {

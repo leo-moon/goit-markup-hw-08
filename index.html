@@ -21,8 +21,8 @@
     </head>
     <body>
         
-        <header class="header"> 
-            <div class="container header__box">
+        <header class="container"> 
+            <div class=" header__box">
                 <div class="logo logo__main">
                     <a href="" class="logo__web">Web<span 
                         class="logo__web logo__studio">Studio</span> 
@@ -76,12 +76,20 @@
                             <use href="./images/sprite.svg#close"></use>
                         </svg>
                     </button>
-                    
-                    <ul class="mobile-menu__nav">
-                        <li href="./index.html" class="mobile-menu__nav-list mobile-menu__nav-list-current">Студия</li>
-                        <li href="./portfolio.html" class="mobile-menu__nav-list">Портфолио</li>
-                        <li class="mobile-menu__nav-list">Контакты</li>
-                    </ul>
+                    <!-- class="" -->
+                    <nav class="mobile-menu__nav-main">
+                        <ul class="mobile-menu__nav">
+                            <li class="mobile-menu__nav-title">
+                                <a class="mobile-menu__nav-list mobile-menu__nav-list-current" href="./index.html">Студия</a>
+                            </li>
+                            <li class="mobile-menu__nav-title">
+                                <a href="./portfolio.html" class="mobile-menu__nav-list">Портфолио</a>
+                            </li>
+                            <li class="mobile-menu__nav-title">
+                                <a class="mobile-menu__nav-list">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
                         
                     <div class="mobile-menu__phone-mail">
                         <a class="mobile-menu__phone" href="tel:+380961111111">
@@ -102,17 +110,17 @@
                 
             </div>
         </header>
-<!--     
+     
         <main>
-            
-            <section class="hero with-img">
-                <div class="container">
-                    <h1 class="hero-title" >Эффективные решения <br> для вашего бизнеса</h1>
+            <!--  -->
+            <section class="with-img">
+                <div class="container hero ">
+                    <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
                     <button data-modal-open class="button" type="button" >Заказать услугу</button>
                 </div>
             </section>
 
-            <section class="destination ">
+            <!-- <section class="destination ">
                 <ul class="destination__item container" >
                     <li class="destination__box icon-antenna">
                         <div class="destination__befor">
@@ -167,9 +175,9 @@
                         </p>
                     </li>
                 </ul>
-            </section>
+            </section> -->
 
-            <section class="business__photo" >
+            <!-- <section class="business__photo" >
                 <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="business__photo-item">
@@ -190,9 +198,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="personal">
+            <!-- <section class="personal">
                 <div class="container" >
                     <h2 class="section-title">Наша команда</h2>
                         <ul  class="team">
@@ -364,9 +372,9 @@
                             </li>
                         </ul>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="clients">
+            <!-- <section class="clients">
                 <div class="container">
                     <h2 class="section-title">Постоянные клиенты</h2>
                     <ul class="clients__icons">
@@ -421,9 +429,9 @@
                     </ul>
                 </div>
 
-            </section>
+            </section> -->
 
-            <div data-modal class="backdrop is-hidden">
+            <!-- <div data-modal class="backdrop is-hidden">
                 <div class="modal">
                     <form class="modal__form">
                         <h3 class="modal__form-title">
@@ -506,11 +514,11 @@
                         </a>
                     </button>
                 </div>
-            </div>
+            </div> -->
 
         </main>
        
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container footer-blocks" >
                 <div>
                     <div class="logo logo-footer">
@@ -578,9 +586,9 @@
                     </div>
                 </form>
             </div>
-       </footer>
+       </footer> -->
        
-    <script src="./js/modal.js"> </script> -->
+    <!-- <script src="./js/modal.js"> </script>  -->
     <script src="./js/modal-menu.js"> </script>
     </body>
 </html>

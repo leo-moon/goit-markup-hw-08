@@ -28,7 +28,8 @@ footer,
     text-decoration: none;
 }
 
-link {
+link,
+a {
     text-decoration: none;
 }
 
@@ -39,7 +40,7 @@ button {
 
 ul,
 nl {
-    list-style-type: NONE;
+    list-style-type: none;
     font-size: 0;
     padding: 0;
 }
