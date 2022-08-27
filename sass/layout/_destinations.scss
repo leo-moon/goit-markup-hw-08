@@ -4,7 +4,8 @@
     }
 
     .destination__befor {
-        height: 120px;
+        // height: 120px;
+        padding: 25px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -68,6 +69,10 @@
     .destination__box {
         width: calc((100% - 30px*3)/4);
         font-size: 1rem;
+    }
+
+    .destination__box:not(:last-child) {
+        margin-bottom: 0px;
     }
 }
 
