@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --accent-color: #2196F3;
   --main-color-light-theme: #212121;
@@ -634,7 +633,7 @@ nl {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/main/Hero-img-480х400.jpg);
+    background-image: url(../images/mobile/hero-480/hero-480.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -682,6 +681,67 @@ nl {
   .hero__title {
     font-size: 44px;
     line-height: 1.364;
+  }
+}
+@media screen {
+  .destination__box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .destination__befor {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dest-background-color);
+    border: none;
+    transition-property: filter, border;
+    transition: filter var(--transition-dur-fun), border var(--transition-dur-fun);
+  }
+  .destination__befor:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 1px solid var(--dest-hover-border-color);
+  }
+  .destination__img {
+    width: 70px;
+    height: 70px;
+  }
+  .destination__title-item {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color-light-theme);
+  }
+  .destination__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-color-light-theme);
+  }
+}
+@media (min-width: 768px) {
+  .destination__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .destination__box {
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
+  }
+  .destination__title-item {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .destination__box {
+    width: calc((100% - 90px) / 4);
+    font-size: 1rem;
   }
 }
 .port-portfolio {
