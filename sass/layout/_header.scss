@@ -28,13 +28,14 @@
         }
     }
 
-.mobile-menu-btn__icon {
-    &:hover,
-    &:focus {
-        fill: var(--accent-color);
-    }
+    .mobile-menu-btn__icon {
 
-}
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+
+    }
 
     .logo {
         font-family: 'Raleway', sans-serif;
@@ -46,13 +47,13 @@
     }
 
     .logo__web {
-        text-decoration: var(--color-light-theme) ;
+        text-decoration: var(--color-light-theme);
         color: var(--accent-color);
         transition: text-decoration var(--transition-dur-fun);
-        
+
         &:hover,
         &:focus {
-        text-decoration: 2px solid var(--accent-color) underline;
+            text-decoration: 2px solid var(--accent-color) underline;
         }
     }
 
@@ -79,7 +80,7 @@
         padding-bottom: 21px;
         justify-self: flex-start;
     }
-    
+
     .logo {
         font-size: 26px;
         line-height: 1.19;
@@ -91,7 +92,6 @@
 
     .navigation {
         display: flex;
-        // top: 32px;
         width: 294px;
         padding-right: auto;
         padding-left: auto;
@@ -135,13 +135,10 @@
     .header-contacts {
         display: flex;
         flex-direction: column;
-        // margin-left: auto;
     }
 
     .email,
     .tel {
-        // align-items: center;
-        // vertical-align: middle;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -154,6 +151,7 @@
 
     .email {
         margin-bottom: 10px;
+
         &:hover,
         &:focus {
             color: var(--accent-color);
@@ -161,6 +159,7 @@
     }
 
     .tel {
+
         &:hover,
         &:focus {
             color: var(--accent-color);
@@ -199,11 +198,6 @@
         }
     }
 }
-
-
-
-
-
 
 @media screen and(min-width: 1200px) {
     .main-header {
@@ -261,4 +255,3 @@
 //         fill: var(--accent-color);
 //     }
 // }
-

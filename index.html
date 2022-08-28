@@ -200,19 +200,57 @@
                 </div>
             </section>
 
-            <!-- <section class="personal">
+            <section class="team">
                 <div class="container" >
-                    <h2 class="section-title">Наша команда</h2>
-                        <ul  class="team">
+                    <h2 class="team__title">Наша команда</h2>
+                        <ul class="team__list-cards">
                             <li class="team__own-data">
-                                <img src="./images/main/1.jpg" class="team__photo" alt="фото" width="270" >
+                                <picture>
+                                    <source 
+                                        srcset="./images/desktop/team/igor-270/igor-270.webp 1x,
+                                                ./images/desktop/team/igor-270/igor-270@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp">
+
+                                    <source 
+                                        srcset="./images/desktop/team/igor-270/igor-270.jpg 1x,
+                                                ./images/desktop/team/igor-270/igor-270@2x.jpg 2x" 
+                                        media="(min-width: 1200px)">
+                                    
+                                    <source
+                                        srcset="./images/tablet/team/igor-354/igor-354.webp 1x,
+                                                ./images/tablet/team/igor-354/igor-354@2x.webp 2x"
+                                        media="(min-width: 767px)"
+                                        type="image/webp">
+
+                                    <source 
+                                        srcset="./images/tablet/team/igor-354/igor-354.jpg 1x,
+                                                ./images/tablet/team/igor-354/igor-354@2x.jpg 2x"
+                                        media="(min-width: 767px)">
+
+                                    <source 
+                                        srcset="./images/mobile/team/igor-450/igor-450.webp 1x, 
+                                                ./images/mobile/team/igor-450/igor-450@2x.webp 2x"
+                                        media="(max-width: 767px)"
+                                        type="image/webp" />
+
+                                    <source 
+                                        srcset="./images/mobile/team/igor-450/igor-450.jpg 1x, 
+                                                ./images/mobile/team/igor-450/igor-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    
+
+                                    <img src="./images/mobile/team/igor-450/igor-450.jpg"
+                                        class="team__photo" alt="фото">
+
+                                </picture>
                                 <div class="team__name-job">
                                     <h3 class="team__name" >Игорь Демьяненко</h3>
                                     <p class="job-name">Product Designer</p> 
                                     <ul class="team__icons">
                                         <li class="team__icon-list">
+
                                             <a href="#" alt="social network" class="team__a-icons">
-                                            
                                                 <svg class="team__list">
                                                     <use href="./images/sprite.svg#instagram" class="team-icon">
                                                     </use>
@@ -248,7 +286,35 @@
                                 </div>
                             </li>
                             <li class="team__own-data">
-                                <img src="./images/main/2.jpg" class="team__photo" alt="фото" width="270">
+                                <picture>
+                                    <source srcset="./images/desktop/team/olga-270/olga-270.webp 1x,
+                                                    ./images/desktop/team/olga-270/olga-270@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp">
+                                
+                                    <source srcset="./images/desktop/team/olga-270/olga-270.jpg 1x,
+                                                    ./images/desktop/team/olga-270/olga-270@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/tablet/team/olga-354/olga-354.webp 1x,
+                                                    ./images/tablet/team/olga-354/olga-354@2x.webp 2x"
+                                        media="(min-width: 767px)" type="image/webp">
+                                
+                                    <source srcset="./images/tablet/team/olga-354/olga-354.jpg 1x,
+                                                    ./images/tablet/team/olga-354/olga-354@2x.jpg 2x"
+                                        media="(min-width: 767px)">
+                                
+                                    <source srcset="./images/mobile/team/olga-450/olga-450.webp 1x, 
+                                                    ./images/mobile/team/olga-450/olga-450@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                
+                                    <source srcset="./images/mobile/team/olga-450/olga-450.jpg 1x, 
+                                                    ./images/mobile/team/olga-450/olga-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                
+                                
+                                    <img src="./images/mobile/team/olga-450/olga-450.jpg" class="team__photo" alt="фото">
+                                
+                                </picture>
                                 <div class="team__name-job">
                                     <h3 class="team__name">Ольга Репина</h3>
                                     <p class="job-name">Frontend Developer</p>
@@ -289,7 +355,36 @@
                                 </div>
                             </li>
                             <li class="team__own-data">
-                                <img src="./images/main/3.jpg" class="team__photo" alt="фото" width="270">
+                                <picture>
+                                    <source srcset="./images/desktop/team/nikolay-270/nikolay-270.webp 1x,
+                                                                                ./images/desktop/team/nikolay-270/nikolay-270@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp">
+                                
+                                    <source srcset="./images/desktop/team/nikolay-270/nikolay-270.jpg 1x,
+                                            ./images/desktop/team/nikolay-270/nikolay-270@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/tablet/team/nikolay-354/nikolay-354.webp 1x,
+                                            ./images/tablet/team/nikolay-354/nikolay-354@2x.webp 2x"
+                                        media="(min-width: 767px)" type="image/webp">
+                                
+                                    <source srcset="./images/tablet/team/nikolay-354/nikolay-354.jpg 1x,
+                                            ./images/tablet/team/nikolay-354/nikolay-354@2x.jpg 2x"
+                                        media="(min-width: 767px)">
+                                
+                                    <source srcset="./images/mobile/team/nikolay-450/nikolay-450.webp 1x, 
+                                            ./images/mobile/team/nikolay-450/nikolay-450@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                
+                                    <source srcset="./images/mobile/team/nikolay-450/nikolay-450.jpg 1x, 
+                                            ./images/mobile/team/nikolay-450/nikolay-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                
+                                
+                                    <img src="./images/mobile/team/nikolay-450/nikolay-450.jpg" class="team__photo" alt="фото">
+                                
+                                </picture>
+
                                 <div class="team__name-job">
                                     <h3 class="team__name">Николай Тарасов</h3>
                                     <p class="job-name">Marketing</p>
@@ -330,7 +425,35 @@
                                 </div>
                             </li>
                             <li class="team__own-data">
-                                <img src="./images/main/4.jpg" class="team__photo" alt="фото" width="270">
+                                <picture>
+                                    <source srcset="./images/desktop/team/mykhail-270/mykhail-270.webp 1x,
+                                            ./images/desktop/team/mykhail-270/mykhail-270@2x.webp 2x"
+                                        media="(min-width: 1200px)" type="image/webp">
+                                
+                                    <source srcset="./images/desktop/team/mykhail-270/mykhail-270.jpg 1x,
+                                            ./images/desktop/team/mykhail-270/mykhail-270@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                
+                                    <source srcset="./images/tablet/team/mykhail-354/mykhail-354.webp 1x,
+                                            ./images/tablet/team/mykhail-354/mykhail-354@2x.webp 2x"
+                                        media="(min-width: 767px)" type="image/webp">
+                                
+                                    <source srcset="./images/tablet/team/mykhail-354/mykhail-354.jpg 1x,
+                                            ./images/tablet/team/mykhail-354/mykhail-354@2x.jpg 2x"
+                                        media="(min-width: 767px)">
+                                
+                                    <source srcset="./images/mobile/team/mykhail-450/mykhail-450.webp 1x, 
+                                            ./images/mobile/team/mykhail-450/mykhail-450@2x.webp 2x"
+                                        media="(max-width: 767px)" type="image/webp" />
+                                
+                                    <source srcset="./images/mobile/team/mykhail-450/mykhail-450.jpg 1x, 
+                                            ./images/mobile/team/mykhail-450/mykhail-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                
+                                
+                                    <img src="./images/mobile/team/mykhail-450/mykhail-450.jpg" class="team__photo" alt="фото">
+                                
+                                </picture>
                                 <div class="team__name-job">
                                     <h3 class="team__name">Михаил Ермаков</h3>
                                     <p class="job-name">UI Designer</p>
@@ -372,7 +495,7 @@
                             </li>
                         </ul>
                 </div>
-            </section> -->
+            </section>
 
             <!-- <section class="clients">
                 <div class="container">
