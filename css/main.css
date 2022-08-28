@@ -103,6 +103,7 @@ nl {
   }
 }
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -789,92 +790,98 @@ nl {
     color: var(--main-color-dark-theme);
   }
 }
-.team {
-  background-color: var(--personal-background-color);
-  padding-top: 60px;
+@media screen {
+  .team {
+    background-color: var(--personal-background-color);
+    padding-top: 60px;
+  }
+  .team__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.179;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .team__own-data {
+    background: var(--main-color-dark-theme);
+  }
+  .team__own-data:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .team__photo {
+    width: calc(100vw - 30px);
+  }
+  .team__name-job {
+    display: block;
+    justify-content: center;
+    padding: 0 0 24px 0;
+    box-shadow: var(--team-shadow-card);
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+  }
+  .team__name {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-color-light-theme);
+  }
+  .job-name {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--second-color-light-theme);
+  }
+  .team__icons {
+    display: flex;
+    justify-content: center;
+    fill: var(--second-color-light-theme);
+  }
+  .team__icon-list {
+    width: 44px;
+    height: 44px;
+  }
+  .team__a-icons {
+    width: 100%;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color-dark-theme);
+    border-color: var(--main-color-dark-theme);
+    fill: var(--clients-card-main-color);
+    transition-property: fill;
+    transition: fill var(--transition-dur-fun), background-color var(--transition-dur-fun);
+  }
+  .team__a-icons:hover, .team__a-icons:focus {
+    border-radius: 50%;
+    fill: var(--main-color-dark-theme);
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+    outline: none;
+  }
+  .team__a-icons:not(:last-child) {
+    margin-right: 10px;
+  }
+  .team__list {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
-
-.team__title {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.179;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+@media (min-width: 480px) {
+  .team__photo {
+    width: 100%;
+  }
 }
-
-.team__own-data {
-  width: 100%;
-  background: var(--main-color-dark-theme);
-}
-
-.team__name-job {
-  padding-bottom: 24px;
-  box-shadow: var(--team-shadow-card);
-  text-align: center;
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team__name {
-  padding-top: 30px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--main-color-light-theme);
-}
-
-.job-name {
-  margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  color: var(--second-color-light-theme);
-}
-
-.team__icons {
-  display: flex;
-  justify-content: space-between;
-  width: 206px;
-  margin: 0 auto;
-  fill: var(--second-color-light-theme);
-}
-
-.team__icon-list {
-  width: calc((100% - 30px) / 4);
-}
-
-.team__a-icons {
-  width: 100%;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--main-color-dark-theme);
-  border-color: var(--main-color-dark-theme);
-  fill: var(--clients-card-main-color);
-  transition-property: fill;
-  transition: fill var(--transition-dur-fun), background-color var(--transition-dur-fun);
-}
-.team__a-icons:hover, .team__a-icons:focus {
-  border-radius: 50%;
-  fill: var(--main-color-dark-theme);
-  background-color: var(--accent-color);
-  border: var(--accent-color);
-  outline: none;
-}
-
-.team__list {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 @media (min-width: 768px) {
   .team__list-cards {
     display: flex;
@@ -883,6 +890,9 @@ nl {
   }
   .team__own-data {
     width: calc((100% - 30px) / 2);
+  }
+  .team__own-data:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 1200px) {
