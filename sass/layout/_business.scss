@@ -7,12 +7,13 @@
 @media (min-width: 1200px) {
     .business {
         display: inline;
-        padding-top: 0;
+        // padding-top: 0;
+        // 
     }
 
     .business__photo-item {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;margin-bottom: 94px;
     }
 
     .business__photo-img {
@@ -22,7 +23,7 @@
 
     .business__title {
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
         display: flex;
         justify-content: center;
         width: 100%;

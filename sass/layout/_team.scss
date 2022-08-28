@@ -17,8 +17,6 @@
 .team__own-data {
     width: 100%;
     background: var(--main-color-dark-theme);
-    // text-align: center;
-    margin-bottom: 30px;
 }
 
 .team__name-job {
@@ -52,7 +50,6 @@
     justify-content: space-between;
     width: 206px;
     margin: 0 auto;
-    margin-bottom: 24px;
     fill: var(--second-color-light-theme);
 }
 
@@ -92,7 +89,23 @@
     background-repeat: no-repeat;
 }
 
+@media (min-width:768px) {
+    .team__list-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
+    .team__own-data {
+        width:calc((100% - 30px)/2);
+    }
+}
+
+@media (min-width:1200px) {
+    .team__own-data {
+        width: calc((100% - 30px * 3)/4);
+    }
+}
 
 
 
