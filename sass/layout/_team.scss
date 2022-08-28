@@ -63,10 +63,7 @@
 
 .team__icons {
     display: flex;
-    justify-content:center;
-    // width: 206px;
-    // margin-left: auto;
-    // margin-right: auto;
+    justify-content:center; 
 
     fill: var(--second-color-light-theme);
 }
@@ -79,7 +76,7 @@
 .team__a-icons {
     width: 100%;
     height: 44px;
-    // margin-right: 10px;
+    margin-right: 10px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -138,7 +135,7 @@
     
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
     .team__own-data {
         width: calc((100% - 30px * 3)/4);
     }

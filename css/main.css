@@ -849,6 +849,7 @@ nl {
   .team__a-icons {
     width: 100%;
     height: 44px;
+    margin-right: 10px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -898,6 +899,59 @@ nl {
 @media (min-width: 1200px) {
   .team__own-data {
     width: calc((100% - 90px) / 4);
+  }
+}
+@media screen {
+  .clients__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.179;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .clients__icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .clients__icon-list {
+    width: calc((100% - 30px) / 2);
+    height: 92px;
+  }
+  .clients__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color-dark-theme);
+    border: 1px solid var(--clients-card-main-color);
+    border-radius: 4px;
+    fill: var(--clients-card-main-color);
+    transition-property: fill;
+    transition: fill var(--transition-dur-fun), border var(--transition-dur-fun);
+  }
+  .clients__link:focus, .clients__link:hover {
+    outline: none;
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
+  .clients__list {
+    width: 106px;
+    height: 60px;
+    border: none;
+  }
+}
+@media (min-width: 768px) {
+  .clients__icon-list {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media (min-width: 1200px) {
+  .clients__icon-list {
+    width: calc((100% - 150px) / 6);
   }
 }
 .port-portfolio {
