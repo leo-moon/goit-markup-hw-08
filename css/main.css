@@ -463,6 +463,7 @@ nl {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid var(--header-border-bttm);
   }
   .mobile-menu-btn {
     background-color: transparent;
@@ -954,154 +955,131 @@ nl {
     width: calc((100% - 150px) / 6);
   }
 }
-.port-portfolio {
-  color: var(--accent-color);
+@media screen {
+  .port-portfolio {
+    color: var(--accent-color);
+  }
+  .port-filters {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 8px;
+    justify-content: left;
+  }
+  .port-filters .port-button {
+    padding: 6px 22px;
+    background-color: var(--portfolio-button-background-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    border: var(--portfolio-button-background-color);
+    color: var(--main-color-light-theme);
+    transition-property: filter;
+    transition: filter var(--transition-dur-fun), background-color var(--transition-dur-fun), color var(--transition-dur-fun);
+  }
+  .port-filters .port-button:hover, .port-filters .port-button:focus {
+    background-color: var(--accent-color);
+    color: var(--main-color-dark-theme);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    outline: none;
+  }
+  .port-project {
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    transition: filter var(--transition-dur-fun);
+  }
+  .port-project:hover {
+    filter: var(--portfolio-drop-shadow);
+  }
+  .port-project:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .port-title-link {
+    padding: 20px 24px;
+  }
+  .port-title-link .port-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color-light-theme);
+  }
+  .port-title-link .port-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--portfolio-link-color);
+  }
+  .port-overlay-overflow {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 294px;
+    overflow: hidden;
+  }
+  .port-overlay-overflow .port-overlay {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    padding: 49px 24px;
+    background-color: var(--accent-color);
+    opacity: 0.9;
+    outline: var(--accent-color);
+    transform: translateY(101%);
+    transition: transform var(--transition-dur-fun);
+  }
+  .port-project:hover .port-overlay-overflow .port-overlay {
+    transform: translateY(0%);
+  }
+  .port-overlay-overflow .port-overlay .port-overlay-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--main-color-dark-theme);
+  }
 }
-
-.port-main {
-  padding-top: 94px;
+@media (min-width: 768px) {
+  .port-filters {
+    justify-content: center;
+  }
+  .port-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .port-project {
+    width: calc((100% - 30px) / 2);
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+  }
+  .port-overlay-overflow {
+    height: 230px;
+  }
 }
-
-.port-box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+@media (min-width: 1200px) {
+  .port-project {
+    width: calc((100% - 60px) / 3);
+  }
+  .port-overlay-overflow {
+    height: 240px;
+  }
 }
-
-.port-filters {
-  margin-bottom: 50px;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-.port-filters .port-button {
-  padding: 6px 22px;
-  background-color: var(--portfolio-button-background-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  letter-spacing: 0.03em;
-  margin-right: 8px;
-  border-radius: 4px;
-  border: var(--portfolio-button-background-color);
-  color: var(--main-color-light-theme);
-  transition-property: filter;
-  transition: filter var(--transition-dur-fun), background-color var(--transition-dur-fun), color var(--transition-dur-fun);
-}
-.port-filters .port-button:hover, .port-filters .port-button:focus {
-  background-color: var(--accent-color);
-  color: var(--main-color-dark-theme);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  outline: none;
-}
-
-.port-button {
-  padding: 6px 22px;
-  background-color: var(--portfolio-button-background-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  letter-spacing: 0.03em;
-  margin-right: 8px;
-  border-radius: 4px;
-  border: var(--portfolio-button-background-color);
-  color: var(--main-color-light-theme);
-  transition-property: filter;
-  transition: filter var(--transition-dur-fun), background-color var(--transition-dur-fun), color var(--transition-dur-fun);
-}
-.port-button:hover, .port-button:focus {
-  background-color: var(--accent-color);
-  color: var(--main-color-dark-theme);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  outline: none;
-}
-
-.port-projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.port-projects .port-project {
-  position: relative;
-  width: calc((100% - 60px) / 3);
-  background: #FFFFFF;
-  overflow: hidden;
-  transition-property: filter;
-  transition: filter var(--transition-dur-fun);
-}
-.port-projects .port-project:hover {
-  filter: var(--portfolio-drop-shadow);
-}
-
-.port-overlay-overflow {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 294px;
-  overflow: hidden;
-}
-.port-overlay-overflow .port-overlay {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 63px 24px;
-  background-color: var(--accent-color);
-  opacity: 0.9;
-  outline: var(--accent-color);
-  transform: translateY(101%);
-  transition-property: transform;
-  transition: transform var(--transition-dur-fun);
-}
-.port-project:hover .port-overlay-overflow .port-overlay {
-  transform: translateY(0%);
-}
-.port-overlay-overflow .port-overlay .port-overlay-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: var(--main-color-dark-theme);
-}
-
-.port-title-link {
-  padding: 20px 24px 20px 24px;
-  border: 1px solid #EEEEEE;
-}
-.port-title-link .port-title {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--main-color-light-theme);
-}
-.port-title-link .port-link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--portfolio-link-color);
-}
-
-.port-nav-link-list::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: calc(50% + 40px - 4px);
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-}
-
 @media screen {
   .footer {
     background-color: var(--footer-background-color);
