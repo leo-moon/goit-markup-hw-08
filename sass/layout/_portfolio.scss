@@ -43,7 +43,7 @@
         // width:calc((100% - 2*30px)/3);
         overflow: hidden;
         background: #FFFFFF;
-        
+        border: 1px solid #EEEEEE;
         transition: filter var(--transition-dur-fun);
     
         &:hover {
@@ -137,7 +137,6 @@
         // position: relative;
         width:calc((100% - 30px)/2);
         background: #FFFFFF;
-        border: 1px solid #EEEEEE;
     }   
 
     .port-overlay-overflow {
