@@ -167,11 +167,6 @@ nl {
   fill: var(--accent-color);
 }
 
-.mobile-menu__nav-contacts {
-  display: flex;
-  justify-items: space-between;
-}
-
 .mobile-menu__nav-main {
   margin-top: 6vmax;
   margin-bottom: 37.9396984925vmax;

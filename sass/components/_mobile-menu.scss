@@ -41,17 +41,9 @@
     }
 }
 
-.mobile-menu__nav-contacts {
-    display: flex;
-    // flex-direction: column;
-    justify-items: space-between;
-}
-
 .mobile-menu__nav-main {
     margin-top: 6vmax;
     margin-bottom:calc(302vmax/7.96) ;
-    // margin-bottom:calc(100vmax - 205px - 234px - 48px);
-    // margin-bottom: 42.5vmax;
 }
 
 .mobile-menu__nav-title:not(:last-child) {
