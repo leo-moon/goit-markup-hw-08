@@ -43,7 +43,7 @@
         // width:calc((100% - 2*30px)/3);
         overflow: hidden;
         background: #FFFFFF;
-        border: 1px solid #EEEEEE;
+        
         transition: filter var(--transition-dur-fun);
     
         &:hover {
@@ -57,6 +57,7 @@
     
     .port-title-link {
         padding: 20px 24px;
+        border: 1px solid #EEEEEE;
 
         .port-title {
             margin-bottom: 10px;
@@ -137,6 +138,10 @@
         // position: relative;
         width:calc((100% - 30px)/2);
         background: #FFFFFF;
+
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
     }   
 
     .port-overlay-overflow {
