@@ -217,11 +217,28 @@ nl {
 }
 
 .mobile-menu__social-network {
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+.mobile-menu__social-network:not(:last-child) {
+  margin-right: 20px;
+}
+.mobile-menu__social-network:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0px;
+  width: 1px;
+  height: 22px;
+  background-color: #212121;
+}
+.mobile-menu__social-network .mobile-menu__network {
+  color: var(--accent-color);
+  margin-right: 20px;
 }
 
 .button {
