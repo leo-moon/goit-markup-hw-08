@@ -168,6 +168,11 @@ nl {
   fill: var(--accent-color);
 }
 
+.mobile-menu__btn-nav,
+.mobile-menu__cont-nets {
+  display: block;
+}
+
 .mobile-menu__nav-main {
   margin-top: 6vmax;
 }

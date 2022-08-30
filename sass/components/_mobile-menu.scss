@@ -26,8 +26,6 @@
     justify-content: space-between;
     
     padding-left: 40px;
-    // display: flex;
-    // 
 }
 
 .mobile-menu__close-btn {
@@ -45,9 +43,13 @@
     }
 }
 
+.mobile-menu__btn-nav,
+.mobile-menu__cont-nets {
+    display: block;
+}
+
 .mobile-menu__nav-main {
     margin-top: 6vmax;
-    // margin-bottom:calc(302vmax/7.96) ;
 }
 
 .mobile-menu__nav-title:not(:last-child) {
@@ -72,7 +74,6 @@
 .mobile-menu__phone-mail {
     display: flex;
     flex-direction: column;
-    // margin-top: auto;
 
 }
 
