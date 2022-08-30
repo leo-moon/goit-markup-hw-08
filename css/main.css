@@ -238,7 +238,7 @@ nl {
   position: absolute;
   content: "";
   top: 0;
-  right: -10px;
+  right: 0px;
   width: 1px;
   height: 22px;
   background-color: #212121;
