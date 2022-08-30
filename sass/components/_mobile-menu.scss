@@ -19,15 +19,19 @@
 }
 
 .mobile-menu__container {
-    display: flex;
-    flex-direction: column;
+    height: 100vmax;
     position: relative;
-    padding-left: 40px;
-    display: flex;
+    display:flex;
     flex-direction: column;
+    justify-content: space-between;
+    
+    padding-left: 40px;
+    // display: flex;
+    // 
 }
 
 .mobile-menu__close-btn {
+
     position: absolute;
     top: 10px;
     right: 15px;
@@ -43,7 +47,7 @@
 
 .mobile-menu__nav-main {
     margin-top: 6vmax;
-    margin-bottom:calc(302vmax/7.96) ;
+    // margin-bottom:calc(302vmax/7.96) ;
 }
 
 .mobile-menu__nav-title:not(:last-child) {
@@ -78,7 +82,6 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     margin-bottom: 4vmax;
-    margin-top: auto;
 
     color: var(--accent-color);
 }

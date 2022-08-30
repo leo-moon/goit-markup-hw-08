@@ -15,10 +15,6 @@
     color: #212121;
 }
 
-// .team__list-cards {
-//     width: 100%;
-// }
-
 .team__own-data {
     // width: 450px;
     background: var(--main-color-dark-theme);
@@ -28,7 +24,6 @@
     margin-bottom: 30px;
 }
 
-// .team__picture
 .team__photo {
     width:calc( 100vw - 30px);
 }
@@ -136,6 +131,12 @@
 }
 
 @media (min-width: 1200px) {
+    .team__title {
+        font-size: 36px;
+        line-height: calc(42/36);
+        margin-bottom: 50px;
+    }
+
     .team__own-data {
         width: calc((100% - 30px * 3)/4);
     }

@@ -150,6 +150,10 @@
 }
 
 @media (min-width: 1200px) {
+    .port-filters {
+        padding-top: 0px;
+    }
+
     .port-project {
         width: calc((100% - 2 * 30px)/3);
     }

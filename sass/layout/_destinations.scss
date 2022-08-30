@@ -4,7 +4,6 @@
     }
 
     .destination__befor {
-        // height: 120px;
         padding: 25px 0;
         display: flex;
         justify-content: center;
@@ -49,6 +48,10 @@
 }
 
 @media (min-width: 768px) {
+    .destination__box:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
     .destination__item {
         display: flex;
         flex-wrap: wrap;

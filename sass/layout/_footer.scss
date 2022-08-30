@@ -28,10 +28,9 @@
         text-decoration: none;
     }
 
-    .address-city {
-        color: var(--main-color-dark-theme);
+    .footer__address-city {
+        color: #FFFFFF;
     }
-
     .footer__logo-adress {
         margin-bottom: 60px;
     }
@@ -145,6 +144,7 @@
     }
 
     .footer__social {
+        text-align: left;
         padding-top: 12px;
         padding-right: 0;
         margin-left: 0;

@@ -7,6 +7,10 @@
         display: none;
     }
 
+    .main-header {
+        border-bottom: 1px solid var(--header-border-bttm);
+    }
+
     .header__box {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -141,8 +145,8 @@
     .email,
     .tel {
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 12px;
+        line-height:calc(14/12);
         letter-spacing: 0.02em;
         text-decoration: none;
 
@@ -200,16 +204,20 @@
     }
 }
 
-@media screen and(min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .main-header {
-        border-bottom: 1px solid var(--header-border-bttm);
-    }
+            border-bottom: 1px solid var(--header-border-bttm);
+        }
 
     .header__box {
         padding-top: 24px;
         padding-bottom: 24px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .logo {
+        margin-right: 93px;
     }
 
     .header-contacts {
@@ -228,6 +236,13 @@
             color: var(--accent-color);
         }
     }
+
+    .email,
+    .tel {
+        font-size: 14px;
+        line-height:calc(16/14);
+    }
+
 }
 
 
