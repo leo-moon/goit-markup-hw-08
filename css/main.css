@@ -147,7 +147,7 @@ nl {
 }
 
 .mobile-menu__container {
-  height: 100vmax;
+  height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1122,7 +1122,7 @@ nl {
     margin-bottom: 0px;
   }
   .port-overlay-overflow {
-    height: 230px;
+    height: 294px;
   }
 }
 @media (min-width: 1200px) {
@@ -1131,9 +1131,6 @@ nl {
   }
   .port-project {
     width: calc((100% - 60px) / 3);
-  }
-  .port-overlay-overflow {
-    height: 240px;
   }
 }
 @media screen {
@@ -1166,6 +1163,9 @@ nl {
   }
   .footer__logo-adress {
     margin-bottom: 60px;
+  }
+  .footer__email {
+    margin: 8px 0;
   }
   .footer__title {
     margin-bottom: 20px;
