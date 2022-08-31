@@ -1,4 +1,8 @@
 @media screen {
+        .clients {
+            padding-top: 60px;
+        }
+
         .clients__title {
         margin-bottom: 30px;
         font-weight: 700;
@@ -51,17 +55,26 @@
 }
 
 @media (min-width:768px) {
+    .clients {
+        padding-top: 60px;
+    }
+
     .clients__icon-list {
         width: calc((100% - 2*30px)/3);
     }
 }
 
 @media (min-width: 1200px) {
+    .clients {
+        padding-top: 94px;
+    }
+
     .clients__title {
         font-size: 36px;
         line-height: calc(42/36);
         margin-bottom: 50px;
     }
+    
     .clients__icon-list {
         width: calc((100% - 5*30px)/6);
     }

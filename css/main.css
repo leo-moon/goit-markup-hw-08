@@ -537,9 +537,10 @@ nl {
   .header__box {
     padding-top: 21px;
     padding-bottom: 21px;
-    justify-self: flex-start;
+    justify-content: left;
   }
   .logo {
+    margin-right: 88px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -584,6 +585,7 @@ nl {
   .header-contacts {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
   }
   .email,
 .tel {
@@ -948,6 +950,9 @@ nl {
   }
 }
 @media screen {
+  .clients {
+    padding-top: 60px;
+  }
   .clients__title {
     margin-bottom: 30px;
     font-weight: 700;
@@ -991,11 +996,17 @@ nl {
   }
 }
 @media (min-width: 768px) {
+  .clients {
+    padding-top: 60px;
+  }
   .clients__icon-list {
     width: calc((100% - 60px) / 3);
   }
 }
 @media (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+  }
   .clients__title {
     font-size: 36px;
     line-height: 1.1666666667;
@@ -1039,6 +1050,7 @@ nl {
   }
   .port-project {
     position: relative;
+    width: 100%;
     overflow: hidden;
     background: #FFFFFF;
     transition: filter var(--transition-dur-fun);
